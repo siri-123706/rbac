@@ -10,7 +10,6 @@ data:
     - groups:
      - roboshop-trainee
       userarn: arn:aws:iam::203981192510:user/jane
-      userarn: arn:aws:iam::444455556666:user/my-user
       username: jane
 kind: ConfigMap
 metadata:
