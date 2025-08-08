@@ -7,9 +7,7 @@ data:
       - system:nodes
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
-    - groups:
-     - roboshop-trainee
-      userarn: arn:aws:iam::203981192510:user/jane
+    - userarn: arn:aws:iam::203981192510:user/jane
       username: jane
 kind: ConfigMap
 metadata:
@@ -17,3 +15,4 @@ metadata:
   name: aws-auth
   namespace: kube-system # add this to eks system it will give access to roboshop-trainee
   uid: 7845b7ce-032a-4776-8920-26fcaf6bb08b
+
